@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Get GGDeals Prices on lestrades
 // @namespace    http://tampermonkey.net/
-// @version      2024-12-07
+// @version      2024-12-06
 // @author       SagaciousFool
 // @match        https://lestrades.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=lestrades.com
@@ -74,7 +74,7 @@ function getBarterItemInfo(itemid) {
 
 
      let tempI = 0;
-    $(".matches td a[href*='/game/']").get()
+    $("td a[href*='/game/']").get()
         .forEach((elem) => {
 
         let barterId = elem.href.match(/com\/game\/\d+/g)[0].split("/")[2];
